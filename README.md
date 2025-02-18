@@ -1,6 +1,6 @@
 # React + Vite
-A streaming website to watch favorite movie and tv shows for free
-created usign react+vite and components used like swiper , material icon etc.
+A streaming website to watch favorite movie and tv shows for free.
+Created using react+vite.Components used like swiper , material icon etc.
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
