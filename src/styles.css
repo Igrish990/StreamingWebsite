@@ -1,0 +1,40 @@
+
+:root {
+  --black: #000;
+  --white: #fff;
+}
+body[theme="black"] {
+  background-color: var(--black);
+}
+body[theme="black"] .section {
+  color: var(--white);
+}
+body[theme="white"] {
+  background-color: var(--white);
+}
+body[theme="white"] .section {
+  color: var(--black);
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@font-face {
+  font-family: "Newfont";
+  src: local("Newfont"), url(./assets/92zatBhPNqw73oTd4g.ttf);
+}
