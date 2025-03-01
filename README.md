@@ -1,10 +1,15 @@
-# React + Vite
-A streaming website to watch favorite movie and tv shows for free.
-Created using react+vite.Components used like swiper , material icon etc.
+Movie Website – Dynamic Movie Exploration Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+–	Technologies: React, Vite, Swiper.js, Tailwind CSS, React Router, TMDb API
 
-Currently, two official plugins are available:
+–	Developed a dynamic and responsive movie website for exploring trending, popular, and top-rated movies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+–	Integrated TMDb API to fetch and display real-time movie data, including posters, ratings, and descriptions.
+
+–	Designed reusable React components (e.g., MovieCard, FocusCards, GlareCard) to enhance modularity and maintainability.
+
+–	Implemented Swiper.js for smooth horizontal scrolling of movie lists.
+
+–	Ensured a fully responsive design optimized for various devices using Tailwind CSS.
+
+–	Utilized React Router for seamless client-side routing and navigation.
