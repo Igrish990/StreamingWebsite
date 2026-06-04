@@ -1,16 +1,15 @@
 import { useEffect, useState } from "react";
-// import { useLocation, useHistory } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const API_KEY = import.meta.env.VITE_API_KEY;
 const IMG_URL = import.meta.env.VITE_IMG_URL;
 const BASE_URL = import.meta.env.VITE_BASE_URL;
 const SearchCharacterMovies = () => {
   const [characters, setCharacters] = useState([]);
-  // const location = useLocation();
-  // const history = useHistory();
+  const location = useLocation();
+  const navigate = useNavigate();
   const handleCharacterClick = () => {
     const originalName = location.state?.originalName;
-    // You can now use the originalName for further actions
     console.log(originalName);
   };
   useEffect(() => {
@@ -22,15 +21,12 @@ const SearchCharacterMovies = () => {
         );
         const data = await response.json();
         setCharacters(data.results);
-        history.push({
-          pathname: "/search-character",
-          state: { results: data.results },
-        });
+        navigate("/search-character", { state: { results: data.results } });
       }
     };
 
     fetchCharacterDetail();
-  }, [location.state, history]);
+  }, [location.state, navigate]);
 
   return (
     <div className=" bg-[#1c1c1c] w-screen h-screen">

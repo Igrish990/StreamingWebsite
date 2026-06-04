@@ -13,7 +13,7 @@ const PlaySeries = () => {
   const [selectedEpisode, setSelectedEpisode] = useState(
     searchParams.get("episode_number") || "1"
   );
-  const [setServer] = useState("server1");
+  const [server, setServer] = useState("server1");
   useEffect(() => {
     const state = location.state;
     if (state) {
