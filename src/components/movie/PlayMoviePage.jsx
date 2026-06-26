@@ -3,7 +3,7 @@ import { useState } from "react";
 import DropdownnMenu from "../other/DropdownnMenu";
 const PlayMoviePage = () => {
   const { id } = useParams();
-  const [setServer] = useState("server1");
+  const [server, setServer] = useState("server1");
 
   const handleServerChange = (newServer) => {
     setServer(newServer);
